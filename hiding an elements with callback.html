@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").hide("slow",function () {
+                    alert("the sentence is now hidden");
+
+                });
+
+            });
+
+        });
+
+
+
+    </script>
+</head>
+<body>
+<button>Hide</button>
+
+<p>This is a sentence with little content.</p>
+</body>
+</html>

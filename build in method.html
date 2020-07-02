@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap example</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+            var str = "HELLO WORLD";
+            var rea = str.charAt(0)
+            document.write("charAt Function "+""+rea);
+            document.write("<br>");
+
+            var strl = "FOLKS"
+            document.write("concat Function: "+""+str.concat(strl));
+            document.write("<br>");
+            document.write("concat Function: "+""+str.indexOf("WORLD"));
+            document.write("<br>");
+            document.write("Length of string: "+""+str.length);
+            document.write("<br>");
+            document.write("Coverting to Lower case: "+""+str.toLowerCase());
+        }
+
+
+    </script>
+
+</head>
+<body>
+<p>Click here to execute buil in functions in Jquery</p>
+
+<button onclick="myFunction()">Click me</button>
+</body>
+</html>

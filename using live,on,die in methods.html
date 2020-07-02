@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap example</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('li').live('click', function () {
+                alert("live event triggred")
+
+
+            });
+
+            $('#btnAdd').on('click', function () {
+                $('ul').append('<li>New List Item</li>');
+
+            });
+
+            $('#btnUndelgate').on('click', function () {
+                $('li').die('click');
+
+            });
+
+        });
+
+
+    </script>
+
+
+</head>
+<body style="font-family: Arial">
+<input type="button" id="btnAdd" value="Add a New list Item">
+<input type="button" id="btnUndelgate" value="Undelagate">
+<ul>
+    <li>List Item</li>
+    <li>List Item</li>
+</ul>
+
+
+</body>
+</html>

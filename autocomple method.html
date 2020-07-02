@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+$(function () {
+var countries = [
+    "Germany",
+ "Ghana",
+"Crotia",
+"Campodia",
+];
+$("#autocomplete-1").autocomplete({
+source: countries
+ });
+
+});
+
+    </script>
+
+
+</head>
+<body>
+<div class="ui-widget">
+    <p>Type "g" or "c"</p>
+    <label for="autocomplete-1">Tags</label>
+    <input id="autocomplete-1">
+</div>
+</body>
+</html>
